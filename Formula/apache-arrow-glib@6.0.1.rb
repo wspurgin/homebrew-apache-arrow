@@ -5,18 +5,14 @@ class ApacheArrowGlibAT601 < Formula
   mirror "https://archive.apache.org/dist/arrow/arrow-6.0.1/apache-arrow-6.0.1.tar.gz"
   sha256 "3786b3d2df954d078b3e68f98d2e5aecbaa3fa2accf075d7a3a13c187b9c5294"
   license "Apache-2.0"
-  revision 1
+  revision 2
   head "https://github.com/apache/arrow.git", branch: "master"
-
-  livecheck do
-    formula "apache-arrow"
-  end
 
   depends_on "gobject-introspection" => :build
   depends_on "meson" => :build
   depends_on "ninja" => :build
   depends_on "pkg-config" => :build
-  depends_on "apache-arrow"
+  depends_on "apache-arrow@6.0.1"
   depends_on "glib"
 
   on_linux do
