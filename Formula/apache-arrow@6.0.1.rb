@@ -8,6 +8,12 @@ class ApacheArrowAT601 < Formula
   revision 5
   head "https://github.com/apache/arrow.git", branch: "master"
 
+  bottle do
+    root_url "https://github.com/wspurgin/homebrew-apache_arrow/releases/download/apache-arrow@6.0.1-6.0.1_5"
+    sha256 cellar: :any,                 big_sur:      "4c70931c88d27a3a49185ab5d70e6902e17d48572cb00708b0ef1b6b6faad130"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "959e0c871f83b563a82f8100e3bec73854659725618fa326d9aa8df1b7c30388"
+  end
+
   depends_on "boost" => :build
   depends_on "cmake" => :build
   depends_on "llvm" => :build
