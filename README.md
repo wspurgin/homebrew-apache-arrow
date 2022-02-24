@@ -1,10 +1,10 @@
-# Wspurgin Apache-arrow
+# Wspurgin Apache_arrow
 
 ## How do I install these formulae?
 
-`brew install wspurgin/apache-arrow/<formula>`
+`brew install wspurgin/apache_arrow/<formula>`
 
-Or `brew tap wspurgin/apache-arrow` and then `brew install <formula>`.
+Or `brew tap wspurgin/apache_arrow` and then `brew install <formula>`.
 
 ## Documentation
 
