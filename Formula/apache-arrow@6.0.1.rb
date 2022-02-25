@@ -9,9 +9,10 @@ class ApacheArrowAT601 < Formula
   head "https://github.com/apache/arrow.git", branch: "master"
 
   bottle do
-    root_url "https://github.com/wspurgin/homebrew-apache_arrow/releases/download/apache-arrow@6.0.1-6.0.1_5"
-    sha256 cellar: :any,                 big_sur:      "4c70931c88d27a3a49185ab5d70e6902e17d48572cb00708b0ef1b6b6faad130"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "959e0c871f83b563a82f8100e3bec73854659725618fa326d9aa8df1b7c30388"
+    root_url "https://github.com/wspurgin/homebrew-apache_arrow/releases/download/apache-arrow@6.0.1-6.0.1_6"
+    sha256 cellar: :any,                 big_sur:      "1291754ad01b29747280a866619fca24e754c9f1ad1a86e165951eebda20c38b"
+    sha256 cellar: :any,                 catalina:     "40faf74ce4831e782b3f9d6467b3d54582650073c569144533c148ccea6789fc"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "36ab7b51a9c41dd2bfc58b2d6f9eea5061befa401f237c4966044b42651b6bfb"
   end
 
   depends_on "boost" => :build
