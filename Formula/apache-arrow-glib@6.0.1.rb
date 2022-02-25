@@ -8,6 +8,11 @@ class ApacheArrowGlibAT601 < Formula
   revision 2
   head "https://github.com/apache/arrow.git", branch: "master"
 
+  bottle do
+    root_url "https://github.com/wspurgin/homebrew-apache_arrow/releases/download/apache-arrow-glib@6.0.1-6.0.1_2"
+    sha256 x86_64_linux: "772fb7c6087c07fb480459694a16db1d49d2f0bb2c6dcbf1dbb1a9ffe77db0f7"
+  end
+
   depends_on "gobject-introspection" => :build
   depends_on "meson" => :build
   depends_on "ninja" => :build
