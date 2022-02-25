@@ -9,7 +9,7 @@ class ApacheArrowGlibAT601 < Formula
   head "https://github.com/apache/arrow.git", branch: "master"
 
   livecheck do
-    formula "apache-arrow"
+    formula "apache-arrow@6.0.1"
   end
 
   depends_on "gobject-introspection" => :build
