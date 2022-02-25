@@ -8,10 +8,6 @@ class ApacheArrowGlibAT601 < Formula
   revision 2
   head "https://github.com/apache/arrow.git", branch: "master"
 
-  livecheck do
-    formula "apache-arrow@6.0.1"
-  end
-
   depends_on "gobject-introspection" => :build
   depends_on "meson" => :build
   depends_on "ninja" => :build
